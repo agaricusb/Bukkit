@@ -207,6 +207,18 @@ public enum Material {
     WOOD_BUTTON(143, Button.class),
     SKULL(144, Skull.class),
     ANVIL(145),
+    CHEST_TRAP(146),
+    LIGHT_PRESSURE_PLATE(147),
+    HEAVY_PRESSURE_PLATE(148),
+    COMPARATOR_OFF(149),
+    COMPARATOR_ON(150),
+    LIGHT_DETECTOR(151),
+    REDSTONE_BLOCK(152),
+    NETHER_QUARTZ_BLOCK(153),
+    HOPPER(154),
+    QUARTZ_BLOCK(155),
+    QUARTZ_STAIRS(156),
+    ACTIVATOR_RAIL(157),
     // ----- Item Separator -----
     IRON_SPADE(256, 1, 250),
     IRON_PICKAXE(257, 1, 250),
@@ -362,6 +374,10 @@ public enum Material {
     FIREWORK(401),
     FIREWORK_CHARGE(402),
     ENCHANTED_BOOK(403, 1),
+    COMPARATOR(404),
+    NETHER_BRICK_ITEM(405),
+    NETHER_QUARTZ(406),
+    TNT_MINECART(407, 1),
     GOLD_RECORD(2256, 1),
     GREEN_RECORD(2257, 1),
     RECORD_3(2258, 1),
@@ -705,6 +721,15 @@ public enum Material {
             case BEACON:
             case COBBLE_WALL:
             case ANVIL:
+            case CHEST_TRAP:
+            case LIGHT_PRESSURE_PLATE:
+            case HEAVY_PRESSURE_PLATE:
+            case LIGHT_DETECTOR:
+            case REDSTONE_BLOCK:
+            case NETHER_QUARTZ_BLOCK:
+            case HOPPER:
+            case QUARTZ_BLOCK:
+            case QUARTZ_STAIRS:
                 return true;
             default:
                 return false;
@@ -760,6 +785,9 @@ public enum Material {
             case POTATO:
             case WOOD_BUTTON:
             case SKULL:
+            case COMPARATOR_OFF:
+            case COMPARATOR_ON:
+            case ACTIVATOR_RAIL:
                 return true;
             default:
                 return false;
@@ -806,6 +834,8 @@ public enum Material {
             case SPRUCE_WOOD_STAIRS:
             case BIRCH_WOOD_STAIRS:
             case JUNGLE_WOOD_STAIRS:
+            case CHEST_TRAP:
+            case LIGHT_DETECTOR:
                 return true;
             default:
                 return false;
@@ -910,6 +940,8 @@ public enum Material {
             case EMERALD_ORE:
             case EMERALD_BLOCK:
             case COMMAND:
+            case NETHER_QUARTZ_BLOCK:
+            case QUARTZ_BLOCK:
                 return true;
             default:
                 return false;
